@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>三角比計算ツール</title>
+    <meta name="Description" content="三角比の計算ツールです。角度、辺の長さを入力することで三角形の全ての要素を求めることができます。" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	  <meta property="og:title" content="三角比計算ツール" />
+  	<meta property="og:description" content="三角比の計算ツールです。角度、辺の長さを入力することで三角形の全ての要素を求めることができます。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="三角比計算ツール」" />
+    <meta property="og:locale" content="ja_JP"  />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <h1>三角比計算ツール</h1>
+      <p class="top">一辺と角度を入力することで他の値を計算することができます。</p>
+      <div class="main">
+        <div class="hero">
+          <img src="hero.jpg" alt="三角比">
+        </div>
+        <div class="div-form">
+          <form class="form">
+            <dl>
+              <dt>B：</dt>
+              <dd><input type="number" class="box" name="b"></dd>
+              <dt>角度(°)：</dt>
+              <dd><input type="number" class="box" name="angle"></dd>
+
+              <p><input type="button" class="calc-btn" onclick="calc(b.value, angle.value);" value="計算"></p>
+
+              <dt>A：</dt>
+              <dd><input id="a" class="box" type="text" readonly=""></dd>
+              <dt>C：</>
+              <dd><input id="c" class="box" type="text" readonly=""></dd>
+            </dl>
+          </form>
+        </div>
+      </div>
+
+      <script>
+      function calc(b, angle) {
+        const a_value = document.getElementById('a').value = b * Math.tan(angle * (Math.PI / 180));
+        const c_value = document.getElementById('c').value = b / Math.cos(angle * (Math.PI / 180));
+      }
+    </script>
+
+    </main>
+    <footer>
+      <p>© 2022 Daiki. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
