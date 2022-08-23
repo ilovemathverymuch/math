@@ -1,0 +1,95 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width:767.98px){
+  h1{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  main .top{
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+  }
+  main .hero img{
+    width: 100%;
+  }
+  main .form{
+    padding: 30px;
+  }
+}
+@media screen and (min-width:768px){
+  h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 70px;
+  }
+  main .top{
+    text-align: center;
+    font-size: 18px;
+    padding: 30px;
+  }
+  .main{
+    display: flex;
+    width: 100%;
+  }
+  main .hero{
+    left: 0%;
+    width: 60%;
+    text-align: center;
+  }
+  main .hero img{
+    width: 80%;
+  }
+  main .form{
+    left: 0%;
+    padding: 20px;
+    width: 40%;
+  }
+
+}
+
+<style>
+.diet_form {
+    background: #696969;
+    padding: 10px 30px;
+}
+form dl dt {
+    width: 200px;
+    height: 40px;
+    padding: 10px 0;
+    line-height: 40px;
+    float: left;
+}
+form dl dd {
+    padding: 10px 0;
+    margin: 0;
+}
+.box {
+    box-sizing: border-box;
+    width: 150px !important;
+    height: 40px !important;
+    margin: 0 !important;
+    padding: 0 10px !important;
+}
+.calc-btn {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #333;
+}
+.calc-btn:hover {
+    cursor: pointer;
+}
+</style>
+footer{
+  
+}
+footer p{
+  font-family: sans-serif;
+  font-weight: normal;
+}
